@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>IconHome</title>
+
+    <!-- <link rel="stylesheet" href="../css/home.css" /> -->
+    <link rel="stylesheet" href="../css/header.css" />
+    <link rel="stylesheet" href="../css/languagebtn.css" />
+    <link rel="stylesheet" href="../css/about.css" />
+
+    <!-- <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    /> -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="icon" href="../images/logozasajt.png" type="image/png" />
+  </head>
+  <body>
+    <nav>
+      <input type="checkbox" id="check" />
+      <label for="check" class="checkbtn">
+        <i class="fas fa-bars"></i>
+      </label>
+      <label class="logo">
+        <a
+          href="../pages/index.html"
+          style="text-decoration: none; color: inherit"
+        >
+          <img
+            src="../images/logozasajt.png"
+            alt="IconHorse Logo"
+            style="height: 40px; vertical-align: middle; margin-right: 10px"
+          />
+          IconHome
+        </a>
+      </label>
+      <ul>
+        <li>
+          <a href="../pages/index.html" data-en="Home" data-sr="Početna"
+            >Home</a
+          >
+        </li>
+        <li>
+          <a href="../pages/icons.html" data-en="Icons" data-sr="Ikone"
+            >Icons</a
+          >
+        </li>
+        <li>
+          <a class="active" href="#" data-en="About us" data-sr="O nama"
+            >About us</a
+          >
+        </li>
+        <li>
+          <a
+            href="../pages/contact.html"
+            data-en="Contact us"
+            data-sr="Kontaktirajte nas"
+            >Contact us</a
+          >
+        </li>
+        <li>
+          <a href="../pages/login.html" data-en="Login" data-sr="Prijava"
+            >Login</a
+          >
+        </li>
+        <li>
+          <div class="switch">
+            <input
+              id="language-toggle"
+              class="check-toggle check-toggle-round-flat"
+              type="checkbox"
+            />
+            <label for="language-toggle"></label>
+            <span style="margin-bottom: 20px" class="on">SR</span>
+            <span class="off">EN</span>
+          </div>
+        </li>
+      </ul>
+    </nav>
+    <div class="aboutContainer">
+      <h1 data-en="Icon providing expert!" data-sr="Ekspert za ikone!">
+        Icon providing expert!
+      </h1>
+
+      <div class="informacije">
+        <p
+          data-en='This site is made as a college project for the exam.  :'
+          data-sr='Ovaj sajt je napravljen kao projekat za fakultet , za ispit. :'
+        >
+          This site is made as a college project for the exam.
+        </p>
+        <p
+          data-en='Some uses were mentioned in the Home page but there are endless other&lt;br&gt;ways to use the icons, if you simply want to know how your own website&lt;br&gt;icon looks. Maybe try to explore other websites, the API guarantees the highest&lt;br&gt;quality icon it can find from the URL you provide it. So why not &lt;a href="../pages/icons.html"&gt;try it out yourself&lt;/a&gt;?'
+          data-sr='Neki primeri su navedeni na početnoj stranici, ali postoji beskrajno mnogo drugih načina&lt;br&gt;za korišćenje ikona. Probajte da istražite druge sajtove, API garantuje najviši&lt;br&gt;kvalitet ikona koje može pronaći sa URL-a koji mu pružite. Zašto ne &lt;a href="../pages/icons.html"&gt;pokušate sami&lt;/a&gt;?'
+        >
+          Some uses were mentioned on the Home page but there are endless other
+          ways to use the icons. Maybe try to explore other websites, the API
+          guarantees the highest quality icon it can find from the URL you
+          provide it. So why not
+          <a href="../pages/icons.html">try it out yourself</a>?
+        </p>
+      </div>
+
+      <!-- <div class="informacije">
+        <p>
+          This site is made as a college project for the exam.
+        </p>
+        <p>
+          Some uses were mentioned in the Home page but there are endless other
+          <br />
+          ways to use the icons, if you simply want to know how your own website
+          icon looks. <br />
+          Maybe try to explore other websites, the api guarantees the highest
+          quality icon
+          <br />
+          it can find from the URL you provide it. So why not
+          <a href="../pages/icons.html"> try it out yourself</a>?
+        </p>
+      </div> -->
+    </div>
+    <footer id="footer">
+      <p>
+        Copyright &copy;
+        <script>
+          document.write(new Date().getFullYear());
+          // Get a reference to the footer element
+          const footer = document.getElementById("footer");
+
+          // Get the height of the footer element
+          const footerHeight = footer.offsetHeight;
+
+          // Apply the footer height as padding-bottom to the body element
+          document.body.style.paddingBottom = `${footerHeight}px`;
+        </script>
+        , Damir_Besirovic
+      </p>
+      <div class="socialIcons">
+        <a href="https://github.com/DamirBesirovic" target="_blank"
+          ><i class="fa-brands fa-github"></i
+        ></a>
+        <a href="https://www.instagram.com/besirovic_damir/" target="_blank"
+          ><i class="fa-brands fa-instagram"></i
+        ></a>
+      </div>
+    </footer>
+    <script src="../JS/lang.js"></script>
+  </body>
+</html>

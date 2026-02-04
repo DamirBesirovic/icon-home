@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>IconHome</title>
+
+    <link rel="stylesheet" href="../css/login.css" />
+    <link rel="stylesheet" href="../css/header.css" />
+    <link rel="stylesheet" href="../css/languagebtn.css" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="icon" href="../images/logozasajt.png" type="image/png" />
+  </head>
+  <body>
+    <nav>
+      <input type="checkbox" id="check" />
+      <label for="check" class="checkbtn">
+        <i class="fas fa-bars"></i>
+      </label>
+      <label class="logo">
+        <a
+          href="../pages/index.html"
+          style="text-decoration: none; color: inherit"
+        >
+          <img
+            src="../images/logozasajt.png"
+            alt="IconHorse Logo"
+            style="height: 40px; vertical-align: middle; margin-right: 10px"
+          />
+          IconHome
+        </a>
+      </label>
+      <ul>
+        <li>
+          <a href="../pages/index.html" data-en="Home" data-sr="Početna"
+            >Home</a
+          >
+        </li>
+        <li class="hidden-link">
+          <a href="../pages/icons.html" data-en="Icons" data-sr="Ikone"
+            >Icons</a
+          >
+        </li>
+        <li class="hidden-link">
+          <a href="../pages/about.html" data-en="About us" data-sr="O nama"
+            >About us</a
+          >
+        </li>
+        <li class="hidden-link">
+          <a
+            href="../pages/contact.html"
+            data-en="Contact us"
+            data-sr="Kontaktirajte nas"
+            >Contact us</a
+          >
+        </li>
+        <li>
+          <a class="active" href="#" data-en="Login" data-sr="Prijava">Login</a>
+        </li>
+        <li>
+          <div class="switch">
+            <input
+              id="language-toggle"
+              class="check-toggle check-toggle-round-flat"
+              type="checkbox"
+            />
+            <label for="language-toggle"></label>
+            <span style="margin-bottom: 20px" class="on">SR</span>
+            <span class="off">EN</span>
+          </div>
+        </li>
+      </ul>
+    </nav>
+    <div class="container">
+      <form id="form" action="/">
+        <h1 data-en="Log in" data-sr="Registracija">Log in</h1>
+        <div class="input-control">
+          <label for="username" data-en="Username" data-sr="Korisnicko ime"
+            >Username</label
+          >
+          <input autocomplete="off" id="username" name="username" type="text" />
+          <div class="error"></div>
+        </div>
+        <div class="input-control">
+          <label for="email" data-en="Email" data-sr="Email">Email</label>
+          <input autocomplete="off" id="email" name="email" type="text" />
+          <div class="error"></div>
+        </div>
+        <div class="input-control">
+          <label for="password" data-en="Password" data-sr="Šifra"
+            >Password</label
+          >
+          <input id="password" name="password" type="password" />
+          <div class="error"></div>
+        </div>
+
+        <button type="submit" data-en="Sign in" data-sr="Prijavite se">
+          Sign in
+        </button>
+      </form>
+    </div>
+    <script src="../JS/formvalid.js"></script>
+    <script src="../JS/lang.js"></script>
+    <script type="text/javascript" src="../Hashing script/md5-mid.js"></script>
+  </body>
+</html>

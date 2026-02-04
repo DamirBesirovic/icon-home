@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>IconHome</title>
+    <link rel="stylesheet" href="../css/header.css" />
+    <link rel="stylesheet" href="../css/languagebtn.css" />
+    <link rel="stylesheet" href="../css/contact.css" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="icon" href="../images/logozasajt.png" type="image/png">
+  </head>
+  <body>
+    <nav>
+      <input type="checkbox" id="check" />
+      <label for="check" class="checkbtn">
+        <i class="fas fa-bars"></i>
+      </label>
+      <label class="logo">
+        <a href="../pages/index.html" style="text-decoration: none; color: inherit;">
+          <img src="../images/logozasajt.png" alt="IconHorse Logo" style="height: 40px; vertical-align: middle; margin-right: 10px;">
+          IconHome
+        </a>
+      </label>
+      <ul>
+        <li><a href="../pages/index.html">Home</a></li>
+        <li><a href="../pages/icons.html">Icons</a></li>
+        <li><a href="../pages/about.html">About us</a></li>
+        <li><a class="active" href="#">Contact us</a></li>
+        <li><a href="../pages/login.html">Login</a></li>
+        <li>
+          <div class="switch">
+            <input
+              id="language-toggle"
+              class="check-toggle check-toggle-round-flat"
+              type="checkbox"
+            />
+            <label for="language-toggle"></label>
+            <span style="margin-bottom: 20px" class="on">SR</span>
+            <span class="off">EN</span>
+          </div>
+        </li>
+      </ul>
+    </nav>
+
+    <div class="container">
+      <form id="form" action="/">
+        <h1 data-en="Send us a message" data-sr="Pošalji nam poruku">
+          Send us a message
+        </h1>
+        <div class="input-control">
+          <label for="username" data-en="Username" data-sr="Korisnicko ime"
+            >Username</label
+          >
+          <input autocomplete="off" id="username" name="username" type="text" />
+          <div class="error"></div>
+        </div>
+        <div class="input-control">
+          <label for="email" data-en="Email" data-sr="Email">Email</label>
+          <input autocomplete="off" id="email" name="email" type="text" />
+          <div class="error"></div>
+        </div>
+      
+
+        <div class="input-control">
+          <label for="message" data-en="Your message" data-sr=" Vaša poruka"
+            >Your message</label
+          >
+          <textarea name="message" id="message" cols="10" rows="10"></textarea>
+        </div>
+
+        <button type="submit" data-en="Send" data-sr="Pošalji">Send</button>
+      </form>
+    </div>
+    <script src="../JS/lang.js"></script>
+    <script src="../JS/contact.js"></script>
+  </body>
+</html>
